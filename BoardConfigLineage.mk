@@ -12,7 +12,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := $(shell sh -c "find prebuilts/clang/host/linux-x86/ -type f -name clang -printf \"%T@ %Tc %p\n\" | sort -n | tail -n1 | sed 's/.*clang-\(.*\)\/bin.*/\1/'")
 TARGET_KERNEL_CONFIG := trm_crosshatch_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
+TARGET_KERNEL_SOURCE := kernel/google/trm-4.9
 
 # vendor.img
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
