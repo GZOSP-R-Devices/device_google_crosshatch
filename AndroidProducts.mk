@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tesla_crosshatch.mk \
-    $(LOCAL_DIR)/tesla_blueline.mk
+    $(LOCAL_DIR)/gzosp_crosshatch.mk \
+    $(LOCAL_DIR)/gzosp_blueline.mk
 
 COMMON_LUNCH_CHOICES := \
-    tesla_crosshatch-userdebug \
-    tesla_blueline-userdebug
+    gzosp_crosshatch-userdebug \
+    gzosp_blueline-userdebug
