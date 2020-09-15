@@ -290,6 +290,8 @@ ODM_MANIFEST_G013D_FILES := device/google/crosshatch/nfc/manifest_se_eSE1.xml
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+
 # Kernel modules
 ifeq (,$(filter-out blueline_kasan crosshatch_kasan, $(TARGET_PRODUCT)))
 BOARD_VENDOR_KERNEL_MODULES += \
