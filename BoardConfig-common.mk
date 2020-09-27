@@ -312,3 +312,8 @@ TARGET_USES_MKE2FS := true
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
 -include vendor/google_devices/crosshatch/proprietary/BoardConfigVendor.mk
+
+# Reserve space for gapps install
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 15728640
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1887436800
+BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 15728640
