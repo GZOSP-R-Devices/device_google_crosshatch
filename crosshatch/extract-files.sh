@@ -23,7 +23,7 @@ DEVICE=crosshatch
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-GZOSP_ROOT="$MY_DIR"/../../..
+GZOSP_ROOT="$MY_DIR"/../../../..
 
 HELPER="$GZOSP_ROOT"/vendor/gzosp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
@@ -51,7 +51,7 @@ fi
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$GZOSP_ROOT"
 
-extract "$MY_DIR/$DEVICE"/device-proprietary-files.txt "$SRC"
-extract "$MY_DIR/$DEVICE"/device-proprietary-files-other.txt "$SRC"
+extract "$MY_DIR"/proprietary-files-vendor.txt "$SRC"
+extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
-"$MY_DIR/$DEVICE"/setup-makefiles.sh
+"$MY_DIR"/setup-makefiles.sh

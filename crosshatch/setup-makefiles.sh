@@ -41,8 +41,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$GZOSP_ROOT"
 write_headers
 
 # The standard blobs
-write_makefiles "$MY_DIR"/device-proprietary-files.txt
-write_makefiles "$MY_DIR"/device-proprietary-files-other.txt true
+write_makefiles "$MY_DIR"/proprietary-files.txt
+write_makefiles "$MY_DIR"/proprietary-files-vendor.txt true
 
 # Finish
 write_footers
