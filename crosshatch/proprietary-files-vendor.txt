@@ -275,7 +275,8 @@ product/etc/permissions/com.android.sdm.plugins.diagmon.xml
 product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
 -product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
--product/priv-app/CarrierSettings/CarrierSettings.apk
+-product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
+-product/priv-app/CarrierWifi/CarrierWifi.apk
 -product/priv-app/ConnMO/ConnMO.apk
 -product/priv-app/DCMO/DCMO.apk
 -product/priv-app/DiagMon/DiagMon.apk

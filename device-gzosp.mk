@@ -29,6 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-gzosp
 # Utilities
 PRODUCT_PACKAGES += \
     libjson \
+    libprotobuf-cpp-full-vendorcompat \
     libtinyxml
 
 # WiFi
